@@ -19,21 +19,12 @@
             margin-bottom: 80px;
             color: black;
         }
-        .criterion-box:nth-of-type(1) {
-            background-color: #fde725;
-        }
-        .criterion-box:nth-of-type(2) {
-            background-color: #a0da39;
-        }
-        .criterion-box:nth-of-type(3) {
-            background-color: #4ac16d;
-        }
-        .criterion-box:nth-of-type(4) {
-            background-color: #1fa187;
-        }
-        .criterion-box:nth-of-type(5) {
-            background-color: #3b528b;
-        }
+        .criterion-box:nth-of-type(1) { background-color: #fde725; }
+        .criterion-box:nth-of-type(2) { background-color: #a0da39; }
+        .criterion-box:nth-of-type(3) { background-color: #4ac16d; }
+        .criterion-box:nth-of-type(4) { background-color: #1fa187; }
+        .criterion-box:nth-of-type(5) { background-color: #3b528b; }
+
         .details {
             font-size: 14px;
             margin-top: 12px;
@@ -100,28 +91,31 @@ Failure of two or more adequate medication trials despite adherence and dosing [
 <fieldset>
 <legend>Drug plasma levels (choose one)</legend>
 
-<label><input type="radio" name="tdm" value="3"> Levels do not correlate with dose (3 points)</label>
+<label><input type="radio" name="tdm" value="3"> Drug plasma levels do not correlate with the administered dose (3 points)</label>
 <div class="details">
-High dose but low level or low dose but high level [1].
+Based on therapeutic drug monitoring (TDM) results [1], defined as:<br>
+- High dose with subtherapeutic drug levels (suggesting ultra-/rapid metabolism), OR<br>
+- Low dose with supratherapeutic/toxic drug levels (suggesting intermediate/poor metabolism).
 </div>
 
-<label><input type="radio" name="tdm" value="1"> Levels outside therapeutic range (1 point)</label>
+<label><input type="radio" name="tdm" value="1"> Plasma drug concentration falls outside the established minimum-maximum range (1 point)</label>
 <div class="details">
-Outside minimum-maximum range or abnormal metabolite ratio [1].
+- Plasma drug concentration falls outside the established minimum-maximum range (C/Dlow and C/Dhigh) for the specific drug according to Hiemke 2018 [1], OR<br>
+- Altered parent drug/metabolite ratio, indicating non-normal CYP2D6/CYP2C19 metabolism (e.g., venlafaxine, risperidone, aripiprazole).
 </div>
 
 <label><input type="radio" name="tdm" value="0" checked> None</label>
 </fieldset>
 
 <div class="criterion-box">
-<label><input type="checkbox" name="adr"> Clinically significant ADRs (3 points)</label>
+<label><input type="checkbox" name="adr"> Clinically significant adverse drug reactions (3 points)</label>
 <div class="details">
-Based on clinical observation:<br>
-- Dose adjustment<br>
-- Increased monitoring<br>
-- Discontinuation<br>
-- Hospitalization<br>
-- Unable to tolerate standard dosing [1,7,8]
+Based solely on clinical observation and pharmacological history, the following criteria are the results of an ADR:<br>
+- Requiring dose adjustment,<br>
+- Increased monitoring,<br>
+- Drug discontinuation due to intolerance or toxicity,<br>
+- Hospitalization due to ADR,<br>
+- Patient is unable to tolerate the drug despite standard dosing [1,7,8]
 </div>
 </div>
 
