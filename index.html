@@ -19,12 +19,21 @@
             margin-bottom: 80px;
             color: black;
         }
-        .criterion-box:nth-of-type(1) { background-color: #fde725; }
-        .criterion-box:nth-of-type(2) { background-color: #a0da39; }
-        .criterion-box:nth-of-type(3) { background-color: #4ac16d; }
-        .criterion-box:nth-of-type(4) { background-color: #1fa187; }
-        .criterion-box:nth-of-type(5) { background-color: #3b528b; }
-
+        .criterion-box:nth-of-type(1) {
+            background-color: #fde725;
+        }
+        .criterion-box:nth-of-type(2) {
+            background-color: #a0da39;
+        }
+        .criterion-box:nth-of-type(3) {
+            background-color: #4ac16d;
+        }
+        .criterion-box:nth-of-type(4) {
+            background-color: #1fa187;
+        }
+        .criterion-box:nth-of-type(5) {
+            background-color: #3b528b;
+        }
         .details {
             font-size: 14px;
             margin-top: 12px;
@@ -49,6 +58,10 @@
             padding: 0 10px;
             display: block;
         }
+        fieldset p {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
         button {
             margin-top: 30px;
             padding: 12px 20px;
@@ -70,27 +83,27 @@
 <div class="criterion-box">
 <label><input type="checkbox" name="psychiatric_med"> The use of psychiatric medication (1 point)</label>
 <div class="details">
-Psychiatric drugs classified as CYP2D6/CYP2C19 substrates [1-5].<br>Examples: atomoxetine, modafinil, amitriptyline, nortriptyline, paroxetine, citalopram, escitalopram, fluoxetine, aripiprazole, risperidone, diazepam, venlafaxine.
+Psychiatric drugs are classified as CYP2D6/CYP2C19 substrates according to the Hiemke 2018 Consensus Guidelines for Therapeutic Drug Monitoring in Psychiatry, Flockhart Table, Pharmacogenomics Knowledge Base, CPIC, and DPWG guidelines for PGx-based drug metabolism impact [1,2,3,4,5].<br><br>Examples:<br>atomoxetine, modafinil, amitriptyline, nortriptyline, paroxetine, citalopram, escitalopram, fluoxetine, aripiprazole, risperidone, diazepam, venlafaxine.
 </div>
 </div>
 
 <div class="criterion-box">
 <label><input type="checkbox" name="somatic_med"> The use of somatic medication (1 point)</label>
 <div class="details">
-Non-psychiatric drugs that are CYP2D6/CYP2C19 substrates [2-5].<br>Examples: clopidogrel, codeine, tramadol, omeprazole, pantoprazole, ondansetron, metoclopramide, voriconazole, metoprolol, propafenone.
+Non-psychiatric drugs that are also substrates for CYP2D6 and CYP2C19 according to the Flockhart Table, Pharmacogenomics Knowledge Base, CPIC, and DPWG guidelines [2,3,4,5].<br><br>Examples:<br>clopidogrel, codeine, tramadol, omeprazole, pantoprazole, ondansetron, metoclopramide, voriconazole, metoprolol, propafenone.
 </div>
 </div>
 
 <div class="criterion-box">
 <label><input type="checkbox" name="treatment_resistance"> Treatment-resistant condition (1 point)</label>
 <div class="details">
-Failure of two or more adequate medication trials despite adherence and dosing [6].
+Defined as the failure of two or more adequate medication trials despite verified adherence and appropriate dosing [6].
 </div>
 </div>
 
 <fieldset>
-<legend>Drug plasma levels (choose one)</legend>
-
+<legend>Drug plasma levels</legend>
+<p>Choose one:</p>
 <label><input type="radio" name="tdm" value="3"> Drug plasma levels do not correlate with the administered dose (3 points)</label>
 <div class="details">
 Based on therapeutic drug monitoring (TDM) results [1], defined as:<br>
@@ -115,7 +128,8 @@ Based solely on clinical observation and pharmacological history, the following 
 - Increased monitoring,<br>
 - Drug discontinuation due to intolerance or toxicity,<br>
 - Hospitalization due to ADR,<br>
-- Patient is unable to tolerate the drug despite standard dosing [1,7,8]
+- Patient is unable to tolerate the drug despite standard dosing (reliable information from pharmacologic history, e.g. medical opinion).<br><br>
+ADRs not linked to CYP2C19/CYP2D6 metabolism variability (concentration-dependent ADRs), such as allergic or immunologically mediated reactions and weight gain, are excluded [1,7,8].
 </div>
 </div>
 
@@ -126,14 +140,14 @@ Based solely on clinical observation and pharmacological history, the following 
 
 <h3>References:</h3>
 <ol>
-<li>Hiemke C, et al. Pharmacopsychiatry 2018.</li>
-<li>Flockhart Table.</li>
-<li>PharmGKB.</li>
+<li>Hiemke, C. et al. (2018). Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: Update 2017. Pharmacopsychiatry.</li>
+<li>Indiana University Drug Interactions Table.</li>
+<li>PharmGKB Database.</li>
 <li>CPIC Guidelines.</li>
 <li>DPWG Guidelines.</li>
-<li>Howes O, Mol Psychiatry 2022.</li>
-<li>Lingjaerde O, UKU-SERS-Pat, 2001.</li>
-<li>Dreher J, ADR scale, 1999.</li>
+<li>Howes O. et al., Treatment resistance in psychiatry, Molecular Psychiatry, 2022.</li>
+<li>Lingjaerde, O. et al., UKU-SERS-Pat (2001).</li>
+<li>Dreher, J. et al., ADR scale (1999).</li>
 </ol>
 
 <script>
